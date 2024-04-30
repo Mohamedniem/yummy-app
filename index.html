@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Yummy</title>
+</head>
+<body class="bgbody">
+
+  <div id="loading" >
+    <i class="fa-solid fa-spinner fa-spin text-white fs-1"></i>
+  </div>
+
+  <div class=" vh-100 d-flex">
+    <div class="sidebar vh-100 d-flex" >
+
+      <div class="yummyside d-flex flex-column  justify-content-between p-3 ">
+        <div class="links overflow-hidden">
+          <ul class="list-unstyled">
+            <li class="py-2 position-relative lista searchBut">Search</li>
+            <li class="py-2 position-relative lista CateogBut">Cateogries</li>
+            <li class="py-2 position-relative lista AreaBut">Area</li>
+            <li class="py-2 position-relative lista IngredBut">Ingredients</li>
+            <li class="py-2 position-relative lista ContactBut">Contact Us</li>
+          </ul>
+        </div>
+        <div>
+          <div><span><i class="fa-brands fa-facebook"></i></span>
+            <span><i class="fa-brands fa-twitter"></i></span>
+            <span><i class="fa-solid fa-globe"></i></span>
+          </div>
+          <p>Copyright Â© 2019 All Rights <br>
+            Reserved.</p>
+        </div>
+      </div>
+      <div class="yummtinout d-flex flex-column justify-content-between align-items-center p-3">
+        <div class="w-100">
+          <img src="./images/logo.jpg" style="width: 40px;">
+        </div>
+        <div class="bars" onclick="">
+          <i class="fa-solid fa-bars fs-3 xbars "></i>
+          <i class="fa-solid fa-xmark fs-3 xmark "></i>
+        </div>
+        <div>
+          <i class="fa-solid fa-globe"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+  
+        </div>
+      </div>
+    </div>
+
+    <!--CONTENT  -->
+    <div class="w-75 mx-auto" >
+      <div class=" d-flex m-4 d-none " id="formSearch" >
+        <input type="text" class="form-control mx-3" placeholder="Search by Name" id="SearchbyName">
+        <input type="text" class="form-control" placeholder="Search by first letter" id="Searchbyfirstletter">
+      </div>
+      <div id="main" class="row">
+        <!-- <div class="col-md-3 mt-5  ">
+          <div class="image bg-danger d-flex justify-content-center align-items-center rounded position-relative ">
+            <img class="main-image w-100 rounded" src="./images/coffe.jpg" alt="" >
+            <div class="layer rounded position-absolute d-flex align-items-center">
+              <h2 class="mx-2">sushi</h2>
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <div id="cateogries" class="row">
+        <div  id="innercateog"></div>
+      </div>
+      <div id="Area" class="row">
+        <!-- <div class="col-md-3 mt-5 text-center" >
+          <div class=" d-flex justify-content-center align-items-center ">
+            <i class="fa-solid fa-house-laptop icon text-white"></i> 
+          </div>
+          <h3 class="text-white">American</h3>
+        </div> -->
+
+      </div>
+      <div id="Ingredients" class="row">
+        
+        <!-- <div class="col-md-3 mt-5 text-center" >
+          <div class=" d-flex justify-content-center align-items-center ">
+            <i class="fa-solid fa-drumstick-bite"></i>
+          </div>
+          <p></p>
+        </div> -->
+
+
+
+      </div>
+      <div class="d-flex flex-column w-100 justify-content-center align-items-center d-none" id="ContacUs">
+        <div class=" m-4 w-100 mx-auto ">
+          <div class=" d-flex m-4 ">
+            <input type="text" onkeyup="validation()" class="form-control  mx-3" placeholder="Enter your Name" id="EnterName">
+            <input type="text" onkeyup="validation()" class="form-control " placeholder="Enter your Email" id="EnterEmail">
+          </div>
+          <div class=" d-flex m-4 ">
+            <input type="text" onkeyup="validation()" class="form-control  mx-3" placeholder="Enter your Phone" id="EnterPhone">
+            <input type="text" onkeyup="validation()" class="form-control " placeholder="Enter your Age" id="EnterAge">
+          </div>
+          <div class=" d-flex m-4 ">
+            <input type="text" onkeyup="validation()" class="form-control  mx-3" placeholder="Enter your Password" id="EnterPassword">
+            <input type="text" onkeyup="validation()" class="form-control " placeholder="RePassword" id="RePassword">
+          </div>
+          
+        </div>
+        <button class="btn btn-danger " id="submit" disabled >submit</button>
+        <!-- disabled -->
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="./js/all.min.js"></script>
+  <script src="./js/bootstrap.bundle.js"></script>
+  <script src="js/jscode.js"></script>
+</body>
+
+</html>

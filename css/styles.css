@@ -1,0 +1,60 @@
+.yummyside{
+    background-color: #0D0D0D;
+    color: white;
+}
+.sidebar{
+    position: fixed;
+    /* left:0 px; */
+    top: 0;
+    bottom: 0;
+    z-index: 999999;
+}
+.yummtinout{
+    background-color: white;
+    color: black;
+}
+.bgbody{
+    background-color: #0D0D0D;
+}
+
+.layer{
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    opacity: .7;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+.image:hover .layer{
+    top: 0;
+    
+}
+.lista{
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 60px;
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+#loading{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0D0D0D;
+    z-index: 999999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
